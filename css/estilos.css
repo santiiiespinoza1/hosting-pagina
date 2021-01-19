@@ -1,0 +1,248 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1.2rem; /*tamaño de las letras*/
+  line-height: 1.6em; /* interlineado */
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.3em;
+}
+
+/* parrafos */
+p {
+  margin-bottom: 1.6em; /*margen inferior funciona como enter entre parrafos*/
+}
+
+
+.header{ 
+	position: relative;
+	overflow-y: hidden;
+	z-index: 1000;	
+	min-width: 360px;
+}
+.header h1{
+	position: absolute;
+	top: 3.5em;
+	left: 2em;
+	font-size: 4.2rem;
+	font-weight: 900;
+	color: #fff;
+	/*text-shadow: 4px 4px 5px black;*/
+}
+
+.fondo{
+	margin:0;
+	width: 100%;
+	background: red;
+	height: 95vh;
+	filter: brightness(0.8);
+	background-size: cover;
+	/*background-origin: center;
+	background-attachment: fixed;*/
+	background: url('../imagenes/background2.jpg') no-repeat center center fixed;
+}
+.shop-now a{
+	position: absolute;
+	top: 360px;
+	left: 140px;
+	background: #fff;
+	padding: 10px 15px;
+	transition: all 0.3s;
+}
+.shop-now a{
+	text-decoration: none;
+	color: #333;
+}
+.shop-now a:hover{
+	background: #000;
+	color: white;
+}
+
+.logo img{
+	width: 130px;
+	margin-left: 100px;
+}
+.logo-nav{
+	background: rgb(51,51,51,0.3);	
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navegacion{
+	display: inline-block;
+	margin-right: 80px;
+}
+.navegacion ul li a i{
+	font-size: 30px;
+}
+.navegacion ul li{
+	display: inline-block;
+	margin-right: 15px;
+}
+.navegacion a{
+	text-decoration: none;
+	color: #cecece;
+	font-size: 15px;
+	transition: color .3s;
+}
+.navegacion ul li a:hover{
+	color:white;
+}
+.main{
+	margin-top: 70px;
+	margin:0px;
+}
+.footer{
+	margin-top: 100px;
+	padding: 80px;
+	text-align: center;
+	background: #cecece;
+}
+.footer i{
+	font-size: 30px;
+}
+.footer a{
+	color: black;
+}
+.nav-icon{
+	display: none
+}
+.tres-bloques{
+	margin: 0px 40px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.container1, .container2, .container3{
+	margin-top: 100px;
+	display: inline-block;
+	color: white;
+	width: 30%;
+	height: 450px;
+	min-width: 300px;
+	max-height: 450px;
+	background: #333;
+}
+.container1{
+	background-image: url('../imagenes/tresbloques1.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.container2{
+	background-image: url('../imagenes/tresbloques2.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.container3{
+	background-image: url('../imagenes/tresbloques3.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.container1 p:first-child{
+	line-height: 50px;
+	font-size: 40px;
+	font-weight: 500;
+	margin-left: 40px;
+	margin-top: 100px;
+}
+.container1 p:nth-child(2){
+	margin-left: 40px;
+	font-size: 20px;
+	font-weight: 500;
+}
+.container1 a {
+	font-size: 17px;
+	font-weight: 500;
+	color: #333;
+	padding: 15px;
+	margin-left: 40px;
+	background: white; 
+	text-decoration: none;
+	transition: all 0.3s;
+}
+.container1 a:hover, .container2 a:hover, .container3 a:hover{
+	background: #000;
+	color: white;
+}
+
+.container2 p, .container3 p{
+	line-height: 50px;
+	font-size: 40px;
+	font-weight: 500;
+	margin-left: 40px;
+	margin-top: 240px;
+}
+.container2 a , .container3 a{
+	position: relative;
+	top: -35px;
+	font-size: 17px;
+	font-weight: 500;
+	color: #333;
+	padding: 15px;
+	margin-left: 40px;
+	background: white; 
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.productos-destacados{
+	margin-top: 100px;
+	height: 100vh;
+	background: #f4f4f4;
+	width: 100%;
+}
+.productos-destacados h2{
+	font-size: 2.7rem;
+	font-weight: 500;
+	padding-top: 70px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 830px){
+	
+    .nav-icon{
+        display: block;
+        cursor: pointer;
+        padding: 10px 15px;
+        margin-right: 15px;
+        background: #cecece;
+    }
+
+    .navegacion ul{
+        display: none;
+        transition: all 1s;
+    }
+    .navegacion{
+    	overflow-x: hidden;
+    }
+    .navegacion ul.show{
+    	z-index: 2000;
+    	text-align: center; 
+    	background: rgb(51,51,51,0.8);
+        display: flex;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 98px;
+
+    }
+      
+    .navegacion ul li {
+		display: block;
+    }
+      
+      /* los enlaces dentro del menu */
+    .navegacion ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+      
+
+}
