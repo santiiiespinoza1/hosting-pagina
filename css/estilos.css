@@ -17,11 +17,11 @@ p {
 }
 
 
-.header{ 
+.header{
 	position: relative;
 	overflow-y: hidden;
 	z-index: 1000;	
-	min-width: 360px;
+	flex-wrap: wrap;
 }
 .header h1{
 	position: absolute;
@@ -40,6 +40,7 @@ p {
 	height: 95vh;
 	filter: brightness(0.8);
 	background-size: cover;
+	box-sizing: border-box;
 	/*background-origin: center;
 	background-attachment: fixed;*/
 	background: url('../imagenes/background2.jpg') no-repeat center center fixed;
@@ -61,18 +62,24 @@ p {
 	color: white;
 }
 
-.logo img{
-	width: 130px;
-	margin-left: 100px;
+.logo{
+	background-image: url(../imagenes/logo2.png);
+	background-repeat:no-repeat;
+	width: 120px;
+	height:100px;
+	background-size: contain;
+	margin-left: 120px;
 }
 .logo-nav{
 	background: rgb(51,51,51,0.3);	
 	position: absolute;
 	top: 0;
 	width: 100%;
+	height: 100px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .navegacion{
 	display: inline-block;
@@ -207,33 +214,38 @@ p {
 @media only screen and (max-width: 830px){
 	
     .nav-icon{
+    	flex-wrap: wrap;
         display: block;
         cursor: pointer;
         padding: 10px 15px;
         margin-right: 15px;
         background: #cecece;
     }
-
+    .logo-nav{
+    	background-color: white;
+    }
+    .logo{
+    	background-image: url(../imagenes/logo.png);
+    	opacity: 0.8;
+    }
     .navegacion ul{
         display: none;
         transition: all 1s;
     }
-    .navegacion{
-    	overflow-x: hidden;
-    }
     .navegacion ul.show{
     	z-index: 2000;
-    	text-align: center; 
-    	background: rgb(51,51,51,0.8);
-        display: flex;
-        width: 100%;
+    	text-align: left; 
+    	background: rgb(51,51,51,0.9);
+        display: inline-block;
         position: absolute;
+        top: 81px;
         left: 0px;
-        top: 98px;
-
+        height: 100vh;
+        transition: all 0.5s;
     }
       
     .navegacion ul li {
+    	margin-top: 20px;
 		display: block;
     }
       
@@ -245,4 +257,11 @@ p {
     }
       
 
+}
+
+@media only screen and (max-width: 375px){
+	.navegacion ul.show{
+        top: 150px;
+
+    }
 }
