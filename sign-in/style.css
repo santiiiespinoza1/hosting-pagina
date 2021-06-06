@@ -1,292 +1,178 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
-  font-size: 1.2rem; /*tamaño de las letras*/
-  line-height: 1.6em; /* interlineado */
-  margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem; /*tamaño de las letras*/
+    line-height: 1.6em; /* interlineado */
+    margin: 0;
 }
-
-h1 {
-  font-size: 2rem;
-  line-height: 1.3em;
-}
-
-/* parrafos */
-p {
-  margin-bottom: 1.6em; /*margen inferior funciona como enter entre parrafos*/
-}
-
-
 .header{
-	position: relative;
-	overflow: hidden;	
-	flex-wrap: wrap;
+    position: absolute;
+    top:0;
+    width: 100%;
+    z-index: 100;
 }
-
-.fondo{
-	margin:0;
-	width: 100%;
-	height: 95vh;
-	filter: brightness(0.8);
-	background-size: cover;
-	box-sizing: border-box;
-	/*background-origin: center;
-	background-attachment: fixed;*/
-	background: url('../imagenes/background2.jpg') no-repeat center center fixed;
-}
-.shop-now{
-	z-index: 100;
-	position: absolute;
-	top: 35%;
-	left: 10%;
-}
-.shop-now h1{
-	top: 3.5em;
-	left: 1.2em;
-	font-size: 4.2rem;
-	font-weight: 900;
-	color: #fff;
-	transition: all .5s;
-	/*text-shadow: 4px 4px 5px black;*/
-}
-.shop-now a{
-	margin: auto;
-	background: #fff;
-	padding: 10px 15px;
-	transition: all 0.5s;
-	text-decoration: none;
-	color: #333;
-}
-.shop-now a:hover{
-	background: #000;
-	color: white;
-}
-
-
-.logo{
-	background-image: url(../imagenes/logo2.png);
-	/*background-repeat:no-repeat;*/
-	width: 120px;
-	height:100px;
-	background-size: contain;
-	margin-left: 10%;
-	transition: all .8s;
+.logo-back{
+    background-color:  rgb(51,51,51,0.5);
+    width: 100%;
+    height: 15vh;
 }
 .logo a img{
-	width: 120px;
-	margin-bottom: -20px;
+    position: relative;
+    top:0.6rem;
+    width: 95px;
+    height: 80px;
+    left:10%;
 }
-.logo-nav{
-	background: rgb(51,51,51,0.3);	
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	transition: all .8s;
+.icon-back {
+    position: absolute;
+    top:1.5rem;
+    right: 5%;
 }
-.navegacion{
-	display: inline-block;
-	margin-right: 80px;
+.icon-back a i{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
 }
-.navegacion ul{
-	z-index: 500;
-	transition: all .8s;
-}
-.navegacion ul li a i{
-	font-size: 30px;
-}
-.navegacion ul li{
-	display: inline-block;
-	margin-right: 15px;
-}
-.navegacion a{
-	text-decoration: none;
-	color: #cecece;
-	font-size: 15px;
-	transition: color .3s;
-}
-.navegacion ul li a:hover{
-	color:white;
-}
-.main{
-	margin-top: 70px;
-	margin:0px;
-}
-.footer{
-	margin-top: 100px;
-	padding: 80px;
-	text-align: center;
-	background: #cecece;
-}
-.footer i{
-	font-size: 30px;
-}
-.footer a{
-	color: black;
-}
-.nav-icon{
-	display: none
-}
-.tres-bloques{
-	margin: 0px 40px;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-.container1, .container2, .container3{
-	margin-top: 100px;
-	display: inline-block;
-	color: white;
-	width: 30%;
-	height: 450px;
-	min-width: 300px;
-	max-height: 450px;
-	background: #333;
-}
-.container1{
-	background-image: url('../imagenes/tresbloques1.jpg');
-	background-size: cover;
-	background-position: center;
-}
-.container2{
-	background-image: url('../imagenes/tresbloques2.jpg');
-	background-size: cover;
-	background-position: center;
-}
-.container3{
-	background-image: url('../imagenes/tresbloques3.jpg');
-	background-size: cover;
-	background-position: center;
-}
-.container1 p:first-child{
-	line-height: 50px;
-	font-size: 40px;
-	font-weight: 500;
-	margin-left: 40px;
-	margin-top: 100px;
-}
-.container1 p:nth-child(2){
-	margin-left: 40px;
-	font-size: 20px;
-	font-weight: 500;
-}
-.container1 a {
-	font-size: 17px;
-	font-weight: 500;
-	color: #333;
-	padding: 15px;
-	margin-left: 40px;
-	background: white; 
-	text-decoration: none;
-	transition: all 0.3s;
-}
-.container1 a:hover, .container2 a:hover, .container3 a:hover{
-	background: #000;
-	color: white;
+.icon-back a{
+    text-decoration: none;
 }
 
-.container2 p, .container3 p{
-	line-height: 50px;
-	font-size: 40px;
-	font-weight: 500;
-	margin-left: 40px;
-	margin-top: 240px;
-}
-.container2 a , .container3 a{
-	position: relative;
-	top: -35px;
-	font-size: 17px;
-	font-weight: 500;
-	color: #333;
-	padding: 15px;
-	margin-left: 40px;
-	background: white; 
-	text-decoration: none;
-	transition: all 0.3s;
+
+ .fondo{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../sign-in/img/login-background.jpg');
 }
 
-.productos-destacados{
-	margin-top: 100px;
-	height: 100vh;
-	background: #f4f4f4;
-	width: 100%;
-}
-.productos-destacados h2{
-	font-size: 2.7rem;
-	font-weight: 500;
-	padding-top: 70px;
-	text-align: center;
+.formulario{
+    padding: 2rem;
+    position: absolute;
+    background-color:  rgb(51,51,51,0.4);
+    text-align: center;
+    color: white;
+    top: 17%;
+    left: 18%;
+    width: 60%;
+    height: 68%;
+    border-radius: 5px;
 }
 
-@media only screen and (max-width: 830px){
-	
-    .nav-icon{
-    	flex-wrap: wrap;
+#iniciar-sesion{
+    margin-top: 5%;
+    font-size: 2rem;
+    font-weight: 800;
+} 
+.formulario form input{
+    width: 25rem;
+    height: 2.1rem;
+    border:0;
+    border-radius: 15px;
+    outline: none;
+    text-align: center;
+}
+
+
+.user label{
+    font-size: .9rem;
+    margin:0;
+    position: relative;
+    left: -5.2rem;
+    display: block;
+}
+
+.password{
+    margin-top: 2rem;
+}
+
+.password label{
+    font-size: .9rem;
+    margin:0;
+    position: relative;
+    left: -8.8rem;
+    display: block;
+}
+
+
+
+.button-login {
+    margin-top:45px;
+}
+
+.button-login input{
+    font-weight: 700;
+    background-color:#e5d9bb;
+    color:black;
+    border-radius: 15px;
+    outline: none;
+    border:0;
+    letter-spacing: 4px;
+    font-size: 15px;
+    transition: all .3s;
+    
+}
+
+.button-login input:hover{
+    cursor:pointer;
+    color:white;
+}
+
+.button-login a{
+    color: white;
+    font-size: .9rem;
+    text-decoration: none;
+}
+
+.button-login a:hover{
+    color:black;
+    text-decoration: none;
+}
+.button-login p{
+    margin:0;
+    font-size: 15px;
+} 
+
+/*--------DIVS DE ERRORES DEL FORMULARIO-------- */
+ #error-user{
+    font-size: 15px;
+    color:#e01010;
+    position: absolute;
+    left: 15rem;
+}
+#error-password{
+    font-size: 15px;
+    color:#e01010;
+    position: absolute;
+    left: 15rem;
+} 
+
+/* AJUSTAR PANTALLA */
+@media only screen and (max-width: 730px){
+    .formulario{
+        left:2%;
+        transition: all .8s;
+        padding: 0;
+        width: 96%;
+        height: 80%;
+    }
+    .formulario form input{
+        width: 80%;
+    }
+    .user label{
+        display: inline;
+        font-size: .8rem;
+        left:2%;
+    }
+    .password label{
         display: block;
-        cursor: pointer;
-        padding: 10px 15px;
-        margin-right: 15px;
-        background: #cecece;
+        font-size: .8rem;
+        width: auto;
+        left: 2%;
     }
-    .logo-nav{
-		background-color: white;
-		opacity: .8;
-    }
-    .logo{
-    	background-image: url(../imagenes/logo.png);
-    	opacity: 0.8;
-	}
-    .navegacion ul{
-		display: none;
-		left: -100%;
-	}
-    .navegacion ul.show{
-		display: block;
-		left:0;
-    	text-align: center; 
-    	background-color: rgb(255, 255,255,.8);
-        position: absolute;
-        top: 83px;
-		height: 100vh;
-		width: 50%;
-		transition: all 0.5s;
-	}
-	
-      
-    .navegacion ul li {
-    	margin-top: 50px;
-		display: block;
-    }
-      
-      /* los enlaces dentro del menu */
-    .navegacion ul li a {
-		color:#333;
-    	font-size: 1.5rem;
-        display: block;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-	}
-      
-
-}
-@media only screen and (max-width: 400px){
-	.header h1{
-		font-size: 3rem;
-		top: 5.5em;
-		left: 1em;
-	}
-	.shop-now a{
-		left: 2.8em;
-	}
-}
-@media only screen and (max-width: 380px){
-    .nav-icon{
-    	position: relative;
-    	margin: 0;
-    	display: inline-block;
+    .button-login{
+        margin-top: 3.8rem;
     }
 }
