@@ -175,4 +175,12 @@ body {
     .button-login{
         margin-top: 3.8rem;
     }
+    #error-user{
+        font-size: .8rem;
+        left:2.5rem;
+    }
+    #error-password{
+        font-size: .8rem;
+        left:3rem;
+    }
 }
