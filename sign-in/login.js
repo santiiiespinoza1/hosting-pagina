@@ -17,11 +17,11 @@ var form = document.getElementById('formulario');
             user.style.border = 'none';
         }
 
-        if ((user.value).indexOf('@') === -1){
-            errorUser.innerHTML = 'Formato incorrecto';
-            user.style.border = 'red solid 2px';
-            errorUser.style.left = '230px';
-        }
+        // if ((user.value).indexOf('@') === -1){
+        //     errorUser.innerHTML = 'Formato incorrecto';
+        //     user.style.border = 'red solid 2px';
+        //     errorUser.style.left = '230px';
+        // }
 
     
         
