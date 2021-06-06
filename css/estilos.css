@@ -37,7 +37,6 @@ p {
 .fondo{
 	margin:0;
 	width: 100%;
-	background: red;
 	height: 95vh;
 	filter: brightness(0.8);
 	background-size: cover;
@@ -67,11 +66,16 @@ p {
 
 .logo{
 	background-image: url(../imagenes/logo2.png);
-	background-repeat:no-repeat;
+	/*background-repeat:no-repeat;*/
 	width: 120px;
 	height:100px;
 	background-size: contain;
-	margin-left: 120px;
+	margin-left: 10%;
+	transition: all .8s;
+}
+.logo a img{
+	width: 120px;
+	margin-bottom: -20px;
 }
 .logo-nav{
 	background: rgb(51,51,51,0.3);	
@@ -83,6 +87,7 @@ p {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+	transition: all .8s;
 }
 .navegacion{
 	display: inline-block;
@@ -225,7 +230,8 @@ p {
         background: #cecece;
     }
     .logo-nav{
-    	background-color: white;
+		background-color: white;
+		opacity: .8;
     }
     .logo{
     	background-image: url(../imagenes/logo.png);
