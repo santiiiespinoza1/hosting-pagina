@@ -19,19 +19,8 @@ p {
 
 .header{
 	position: relative;
-	overflow: hidden;
-	z-index: 1000;	
+	overflow: hidden;	
 	flex-wrap: wrap;
-}
-.header h1{
-	position: absolute;
-	top: 3.5em;
-	left: 1.2em;
-	font-size: 4.2rem;
-	font-weight: 900;
-	color: #fff;
-	transition: all .5s;
-	/*text-shadow: 4px 4px 5px black;*/
 }
 
 .fondo{
@@ -45,17 +34,26 @@ p {
 	background-attachment: fixed;*/
 	background: url('../imagenes/background2.jpg') no-repeat center center fixed;
 }
-.shop-now a{
-
+.shop-now{
+	z-index: 100;
 	position: absolute;
-	top: 20em;
-	left: 5em;
+	top: 35%;
+	left: 10%;
+}
+.shop-now h1{
+	top: 3.5em;
+	left: 1.2em;
+	font-size: 4.2rem;
+	font-weight: 900;
+	color: #fff;
+	transition: all .5s;
+	/*text-shadow: 4px 4px 5px black;*/
+}
+.shop-now a{
 	margin: auto;
 	background: #fff;
 	padding: 10px 15px;
 	transition: all 0.5s;
-}
-.shop-now a{
 	text-decoration: none;
 	color: #333;
 }
@@ -63,6 +61,7 @@ p {
 	background: #000;
 	color: white;
 }
+
 
 .logo{
 	background-image: url(../imagenes/logo2.png);
@@ -92,6 +91,10 @@ p {
 .navegacion{
 	display: inline-block;
 	margin-right: 80px;
+}
+.navegacion ul{
+	z-index: 500;
+	transition: all .8s;
 }
 .navegacion ul li a i{
 	font-size: 30px;
@@ -236,35 +239,37 @@ p {
     .logo{
     	background-image: url(../imagenes/logo.png);
     	opacity: 0.8;
-    }
+	}
     .navegacion ul{
-        display: none;
-        transition: all 1s;
-    }
+		display: none;
+		left: -100%;
+	}
     .navegacion ul.show{
-    	z-index: 2000;
-    	text-align: left; 
-    	background: rgb(51,51,51,0.9);
-        display: block;
+		display: block;
+		left:0;
+    	text-align: center; 
+    	background-color: rgb(255, 255,255,.8);
         position: absolute;
         top: 83px;
-        left: 0px;
-        height: 100vh;
-        transition: all 0.5s;
-    }
+		height: 100vh;
+		width: 50%;
+		transition: all 0.5s;
+	}
+	
       
     .navegacion ul li {
-    	margin-top: 20px;
+    	margin-top: 50px;
 		display: block;
     }
       
       /* los enlaces dentro del menu */
     .navegacion ul li a {
+		color:#333;
     	font-size: 1.5rem;
         display: block;
         padding: 0.5rem 1rem;
         border-radius: 5px;
-    }
+	}
       
 
 }
