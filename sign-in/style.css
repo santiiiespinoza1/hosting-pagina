@@ -45,7 +45,7 @@ body {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-image: url('../sign-in/img/login-background.jpg');
+    background-image: url('fondo.jpg');
 }
 
 .formulario{
@@ -57,12 +57,12 @@ body {
     top: 17%;
     left: 18%;
     width: 60%;
-    height: 68%;
+    height: 70vh;
     border-radius: 5px;
 }
 
 #iniciar-sesion{
-    margin-top: 5%;
+    margin-top: 0;
     font-size: 2rem;
     font-weight: 800;
 } 
@@ -75,15 +75,37 @@ body {
     text-align: center;
 }
 
-
-.user label{
+/*INPUT NOMBRE*/
+.name label{
     font-size: .9rem;
     margin:0;
     position: relative;
-    left: -5.2rem;
     display: block;
 }
 
+/*INPUT EMAIL*/
+.email {
+    margin-top: 2rem;
+}
+.email label{
+   font-size: .9rem;
+    margin:0;
+    position: relative;
+    display: block; 
+}
+/*INPUT TELÉFONO*/
+.phone{
+    margin-top:2rem;
+}
+
+.phone label{
+    font-size: .9rem;
+    margin:0;
+    position: relative;
+    display: block;
+}
+
+/*INPUT PASSWORD*/
 .password{
     margin-top: 2rem;
 }
@@ -92,7 +114,6 @@ body {
     font-size: .9rem;
     margin:0;
     position: relative;
-    left: -8.8rem;
     display: block;
 }
 
@@ -120,20 +141,6 @@ body {
     color:white;
 }
 
-.button-login a{
-    color: white;
-    font-size: .9rem;
-    text-decoration: none;
-}
-
-.button-login a:hover{
-    color:black;
-    text-decoration: none;
-}
-.button-login p{
-    margin:0;
-    font-size: 15px;
-} 
 
 /*--------DIVS DE ERRORES DEL FORMULARIO-------- */
  #error-user{
