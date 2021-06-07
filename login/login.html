@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e1fb628372.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class='header'>
+        <div class="logo-back">
+            <div class="logo">
+                <a href="../index.html"><img src="../imagenes/logo2.png" alt=""></a>
+            </div>
+            <div class="icon-back">
+                <a href="../index.html"><i class="fas fa-home"></i></a>
+            </div>
+            
+        </div>
+    </header>
+    <main class="principal">
+        <div class="fondo"></div>
+        <div class="formulario">
+            <form id="formulario">
+                <p id="iniciar-sesion">Iniciar Sesión</p>
+                <div class="user">
+                    <label for="usuario">Usuario o Correo Electrónico</label>
+                    <input type="text" id="user-input" autocomplete="off">
+                </div>
+                <div id="error-user"></div>
+                <div class="password">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="password-input" autocomplete="off">
+                    
+                </div>
+                <div id="error-password"></div>
+                <div class="button-login">
+                    <input type="submit" value="INICIAR SESIÓN">
+                    <p>¿No tienes cuenta?<a href="../sign-in/sign-in.html"> Registrate</a></b></p>
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+                
+            </form>
+        </div>
+        
+    </main>
+<script src='login.js'></script>
+</body>
+</html>
