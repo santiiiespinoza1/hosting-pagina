@@ -33,7 +33,7 @@ p {
 	box-sizing: border-box;
 	/*background-origin: center;
 	background-attachment: fixed;*/
-	background: url('../imagenes/background2.jpg') no-repeat center center fixed;
+	-webkit-background-size:cover;
 	transition: all .5s;
 }
 .shop-now{
