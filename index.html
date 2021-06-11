@@ -15,7 +15,11 @@
 <body>
 
 	<header class="header">
-		<div class="fondo" onload="cambiarFondo()"></div>
+		<div class="fondos">
+			<div class="fondo2"></div>	
+			<div class="fondo1"></div>
+			<div class="fondovacio"></div>
+		</div>
 		<div class="container">
 			<div class="logo-nav">
 				<div class="logo">
@@ -37,6 +41,12 @@
 					<li class="menu__item"><a href="#" class="menu__link">Contactanos</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Sobre Nosotros</a></li>
 					<li class="menu__item"><a href="login/login.html" class="menu__link">Iniciar Sesión</a></li>
+					<li class="menu__item buscar-icon ">
+						<a href="#" class="menu__link"  id="search-btn">
+							<i class="fas fa-search" ></i>
+						</a>
+						<input type="text" name="Buscar" class="inputBuscar">
+					</li>
 				</ul>
 			</nav>
 
@@ -64,6 +74,33 @@
 		</div>
 		<section class="productos-destacados">
 			<h2 id="p-destacados">Productos destacados</h2>
+			<div class="caja-flechas">
+				<i class="fas fa-arrow-left flecha-izq"></i>
+				<i class="fas fa-arrow-right flecha-derecha"></i>
+			</div>
+			<div class="lista-prod">
+				<div class="only-item-ph">
+					<a href="#"><div class="img-prod only"></div></a>
+					<p id="product-name">Ejemplo Producto 1</p>
+					<p id="price">$1250</p>
+				</div>
+				<div class="items-prod">
+					<a href="#"><div class="img-prod"></div></a>
+					<p id="product-name">Ejemplo Producto 1</p>
+					<p id="price">$1250</p>
+				</div>
+				<div class="items-prod">
+					<a href="#"><div class="img-prod"></div></a>
+					<p id="product-name">Ejemplo Producto 1</p>
+					<p id="price">$1250</p>
+				</div>
+				<div class="items-prod">
+					<a href="#"><div class="img-prod"></div></a>
+					<p id="product-name">Ejemplo Producto 1</p>
+					<p id="price">$1250</p>
+				</div>
+			</div>
+			<a href="#" id="p-destacados__ver-mas">VER MÁS</a>
 		</section>
 	</main>
 	<footer class="footer">
@@ -75,6 +112,6 @@
 <!-- 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
     <script src="menu.js"></script>
     <script src="fondos.js"></script>
-
+    <script src="product-list.js"></script>
 </body>
 </html>
