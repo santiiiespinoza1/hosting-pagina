@@ -10,6 +10,7 @@ var posActual = 1;
 arrowRight.addEventListener('click',function(){
 	posActual++;
 	arrowRight.style.background = '#ccc';
+        arrowRight.style.border = '2px solid red';
 	setTimeout(function(){
 		arrowRight.style.background = 'none';
 	},500);
